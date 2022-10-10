@@ -3,7 +3,15 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [
+  {
+    path: "/login",
+    component: () => import("@/views/test-one.vue"),
+    meta: {
+      title: "one",
+    },
+  },
+];
 
 const router = new VueRouter({
   routes,
